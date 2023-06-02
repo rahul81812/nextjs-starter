@@ -30,7 +30,7 @@ export async function getStaticPaths() {
                 params: { productId: 'milk' }
             },
         ],
-        fallback: true,
+        fallback: false,
     }
 }
 
