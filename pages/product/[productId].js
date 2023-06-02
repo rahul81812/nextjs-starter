@@ -1,11 +1,11 @@
-import { useRouter } from "next/router"
+//import { useRouter } from "next/router"
 
 function Product({ product }) {
-    const router = useRouter()
-    if (router.isFallback) {
-        return <h1>Loading...</h1>
-    }
-  //  console.log(product)
+//    const router = useRouter()
+//    if (router.isFallback) {
+//        return <h1>Loading...</h1>
+//    }
+//  console.log(product)
     return (
         <>
         <h1> Product Page Internal </h1>
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
                 params: { productId: 'milk' }
             },
         ],
-        fallback: true,
+        fallback: 'blocking',
     }
 }
 
