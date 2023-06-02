@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 function Product({ product }) {
     const router = useRouter()
     if (router.isFallback) {
-        return <h1>Loading..</h1>
+        return <h1>Loading...</h1>
     }
   //  console.log(product)
     return (
