@@ -1,5 +1,6 @@
 //import { useRouter } from "next/router"
 
+
 function Product({ product }) {
 //    const router = useRouter()
 //    if (router.isFallback) {
